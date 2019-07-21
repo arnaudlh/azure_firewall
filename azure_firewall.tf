@@ -4,7 +4,7 @@
 resource "azurerm_firewall" "az_firewall" {
   name                = var.az_fw_name
   location            = var.location 
-  resource_group_name = var.rg
+  resource_group_name = var.az_fw_rg
   tags                = var.tags
 
   ip_configuration {
