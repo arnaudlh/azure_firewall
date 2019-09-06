@@ -11,7 +11,7 @@ variable "tags" {
 }
 
 variable "az_fw_rg" {
-  description = "(Required) Resource Groupe of the Azure Firewall to be created"  
+  description = "(Required) Resource Group of the Azure Firewall to be created"  
 }
 
 variable "diagnostics_map" {
@@ -28,4 +28,9 @@ variable "subnet_id" {
 
 variable "public_ip_id" {
   description = "(Required) Public IP address identifier. IP address must be of type static and standard."
+}
+
+variable "opslogs_retention_period" {
+  description = "(Optional) Number of days to keep operations logs inside storage account"
+  default = 60
 }

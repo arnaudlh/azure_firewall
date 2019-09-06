@@ -11,7 +11,7 @@ log {
 
         category =  "AzureFirewallApplicationRule"
         retention_policy {
-            days   = 90
+            days   = var.opslogs_retention_period
             enabled = true
         }
         }
@@ -19,7 +19,7 @@ log {
 
         category =  "AzureFirewallNetworkRule"
         retention_policy {
-            days   = 90
+            days   = var.opslogs_retention_period
             enabled = true
         }
         }
@@ -27,7 +27,7 @@ metric {
         category = "AllMetrics"
 
         retention_policy {
-            days    = 90
+            days    = var.opslogs_retention_period
             enabled = true
                 }
     }
