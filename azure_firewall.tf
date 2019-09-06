@@ -1,5 +1,4 @@
 #Reference: https://www.terraform.io/docs/providers/azurerm/r/firewall.html 
-#Provider seriously lacking of settings currently (zonal support etc.)
 
 resource "azurerm_firewall" "az_firewall" {
   name                = var.az_fw_name
