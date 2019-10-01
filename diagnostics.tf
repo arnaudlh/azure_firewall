@@ -1,4 +1,4 @@
-module "diagnostics_asr" {
+module "diagnostics_az_fw" {
   source = "git@ssh.dev.azure.com:v3/azure-terraform/Blueprints/module_diagnostics?ref=v0.1.1"
   
     name                            = azurerm_firewall.az_firewall.name
