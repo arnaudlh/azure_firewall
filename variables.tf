@@ -18,8 +18,8 @@ variable "diagnostics_map" {
   description = "(Required) Storage Account and Event Hub data for the AzFW diagnostics"    
 }
 
-variable "log_analytics_workspace" {
-  description = "(Required) Log Analytics data for the AzFW diagnostics"
+variable "log_analytics_workspace_id" {
+  description = "(Required) ID of Log Analytics data for the AzFW diagnostics"
 }
 
 variable "subnet_id" {
@@ -30,7 +30,6 @@ variable "public_ip_id" {
   description = "(Required) Public IP address identifier. IP address must be of type static and standard."
 }
 
-variable "opslogs_retention_period" {
-  description = "(Optional) Number of days to keep operations logs inside storage account"
-  default = 60
+variable "diagnostics_settings" {
+ description = "(Required) Map with the diagnostics settings for AzFW deployment"
 }
